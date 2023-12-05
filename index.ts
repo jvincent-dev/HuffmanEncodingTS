@@ -1,6 +1,6 @@
 import HuffCode from "./classes/HuffCode";
 
-function encodeForFunSharableText(textToEncode: string) {
+export function encodeForFunSharableText(textToEncode: string) {
   const hc = new HuffCode();
 
   console.log(textToEncode);
@@ -16,7 +16,7 @@ function encodeForFunSharableText(textToEncode: string) {
   return btoa(linkedResult);
 }
 
-function decodeForFunSharableText(textToDecode: string) {
+export function decodeForFunSharableText(textToDecode: string) {
   const hc = new HuffCode();
   const fromBase64Text = atob(textToDecode);
   const splitterIndex = fromBase64Text.indexOf(":");
@@ -39,6 +39,8 @@ function main() {
 } // base64 is actually used to turn bits into ascii to prevent communication issues that might confuse payload data with communication bits.
 
 main();
+
+export default HuffCode;
 
 /** NOTES
  * - huffman example: https://youtu.be/iEm1NRyEe5c
