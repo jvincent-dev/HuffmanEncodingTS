@@ -1,8 +1,8 @@
 {
   "name": "huffmanencodets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Huffman Encoding Revisited - TS version - https://github.com/jvincent-dev/HuffmanEncodeDecode",
-  "main": "index.ts",
+  "main": "./lib/index.js",
   "scripts": {
     "start": "npx tsc && node ./lib/index.js"
   },
