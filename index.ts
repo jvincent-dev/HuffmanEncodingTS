@@ -38,8 +38,6 @@ function main() {
   console.log("E/D:", encodedText, decodedText);
 } // base64 is actually used to turn bits into ascii to prevent communication issues that might confuse payload data with communication bits.
 
-main();
-
 export default HuffCode;
 
 /** NOTES
